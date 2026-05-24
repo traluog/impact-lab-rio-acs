@@ -188,8 +188,8 @@ Fornecidos pela Prefeitura do Rio de Janeiro (anonimizados com SHA256 e date shi
 
 | Recurso | URL |
 |---------|-----|
-| Aplicação (Streamlit Cloud) | *em breve* |
-| Repositório GitHub | *em breve* |
+| Aplicação (Streamlit Cloud) | https://traluog-impact-lab-rio-acs-app-wweq5e.streamlit.app/ |
+| Repositório GitHub | https://github.com/traluog/impact-lab-rio-acs |
 
 ---
 
