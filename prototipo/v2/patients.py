@@ -1,0 +1,112 @@
+"""
+Dados dos pacientes — mock representando output do score engine.
+Em produção: substituir por query ao banco de dados ou API.
+"""
+
+PATIENTS = [
+    {
+        "id": "p001", "code": "93449...", "score": 92,
+        "faixa": "66+", "sexo": "F", "raca": "Branca",
+        "hipertenso": True, "diabetico": True, "gestacao": False,
+        "vulneravel": False, "tb": False,
+        "dias_sem_visita": 47, "alerta_urgencia": True,
+        "distancia_m": 380, "distancia": "380m",
+        "endereco": "Rua das Camélias, nº 42",
+        "tel": "5521987654321",
+        "pos": {"x": 130, "y": 110},
+        "motivos": ["66+ anos", "Hipertenso + Diabético", "47 dias sem visita", "Urgência em mai/25"],
+        "fichas": ["geral", "has", "dm", "violencia"],
+        "week_day": 0,
+    },
+    {
+        "id": "p002", "code": "70380...", "score": 78,
+        "faixa": "6-18", "sexo": "F", "raca": "Parda",
+        "hipertenso": False, "diabetico": False, "gestacao": False,
+        "vulneravel": True, "tb": False,
+        "dias_sem_visita": 63, "alerta_urgencia": False,
+        "distancia_m": 520, "distancia": "520m",
+        "endereco": "Beco do Cedro, nº 11",
+        "tel": "5521976543210",
+        "pos": {"x": 290, "y": 80},
+        "motivos": ["Vulnerabilidade social", "63 dias sem visita"],
+        "fichas": ["geral", "violencia"],
+        "week_day": 1,
+    },
+    {
+        "id": "p003", "code": "5a3f1...", "score": 71,
+        "faixa": "19-45", "sexo": "F", "raca": "Parda",
+        "hipertenso": False, "diabetico": False, "gestacao": True,
+        "vulneravel": True, "tb": False,
+        "dias_sem_visita": 28, "alerta_urgencia": False,
+        "distancia_m": 210, "distancia": "210m",
+        "endereco": "Trav. Esperança, nº 7A",
+        "tel": "5521965432109",
+        "pos": {"x": 170, "y": 160},
+        "motivos": ["Gestante", "Vulnerabilidade social", "28 dias sem visita"],
+        "fichas": ["geral", "gestante", "violencia"],
+        "week_day": 0,
+    },
+    {
+        "id": "p004", "code": "867dd...", "score": 55,
+        "faixa": "45-65", "sexo": "F", "raca": "Parda",
+        "hipertenso": True, "diabetico": False, "gestacao": False,
+        "vulneravel": False, "tb": False,
+        "dias_sem_visita": 38, "alerta_urgencia": False,
+        "distancia_m": 670, "distancia": "670m",
+        "endereco": "R. Lins de Vasconcelos, nº 198",
+        "tel": "5521954321098",
+        "pos": {"x": 310, "y": 180},
+        "motivos": ["Hipertensa", "38 dias sem visita"],
+        "fichas": ["geral", "has", "violencia"],
+        "week_day": 2,
+    },
+    {
+        "id": "p005", "code": "c72ab...", "score": 48,
+        "faixa": "66+", "sexo": "M", "raca": "Preta",
+        "hipertenso": True, "diabetico": False, "gestacao": False,
+        "vulneravel": False, "tb": False,
+        "dias_sem_visita": 22, "alerta_urgencia": False,
+        "distancia_m": 290, "distancia": "290m",
+        "endereco": "R. Barão de Cotegipe, nº 34",
+        "tel": "5521943210987",
+        "pos": {"x": 240, "y": 290},
+        "motivos": ["66+ anos", "Hipertenso", "22 dias sem visita"],
+        "fichas": ["geral", "has", "violencia"],
+        "week_day": 1,
+    },
+    {
+        "id": "p006", "code": "bb019...", "score": 35,
+        "faixa": "0-6", "sexo": "M", "raca": "Parda",
+        "hipertenso": False, "diabetico": False, "gestacao": False,
+        "vulneravel": False, "tb": False,
+        "dias_sem_visita": 18, "alerta_urgencia": False,
+        "distancia_m": 450, "distancia": "450m",
+        "endereco": "R. das Orquídeas, nº 3",
+        "tel": "5521932109876",
+        "pos": {"x": 90, "y": 260},
+        "motivos": ["Criança 0-6 anos", "18 dias sem visita"],
+        "fichas": ["geral", "infancia", "violencia"],
+        "week_day": 3,
+    },
+    {
+        "id": "p007", "code": "f3d88...", "score": 25,
+        "faixa": "19-45", "sexo": "M", "raca": "Branca",
+        "hipertenso": False, "diabetico": False, "gestacao": False,
+        "vulneravel": False, "tb": False,
+        "dias_sem_visita": 11, "alerta_urgencia": False,
+        "distancia_m": 180, "distancia": "180m",
+        "endereco": "Pça. General Osório, nº 21",
+        "tel": "5521921098765",
+        "pos": {"x": 150, "y": 320},
+        "motivos": ["Sem condição crônica", "11 dias sem visita"],
+        "fichas": ["geral", "violencia"],
+        "week_day": 4,
+    },
+]
+
+ACS_POS = {"x": 200, "y": 220}
+ACS_NAME = "Maria dos Santos"
+ACS_TEAM = "ESF Cascadura III"
+ACS_TERRITORY = "Micro-área 07 · Cascadura"
+TODAY_LABEL = "Seg, 26 Mai 2025"
+WEEK_DAYS = ["Seg 26/05", "Ter 27/05", "Qua 28/05", "Qui 29/05", "Sex 30/05", "Sáb 31/05"]

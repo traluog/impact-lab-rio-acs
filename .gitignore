@@ -1,0 +1,34 @@
+# ─── Segredos — NUNCA commitar ────────────────────────────────────
+.env
+.env*
+.streamlit/secrets.toml
+
+# ─── Configurações locais do Claude Code ──────────────────────────
+.claude/
+
+# ─── Transcrições e arquivos de sessão ───────────────────────────
+transcricao_briefing.txt
+
+# ─── Dados do desafio — não commitar dados da prefeitura ──────────
+data/parquet/
+data/repo/
+
+# ─── Outputs dos agentes (gerados em runtime) ─────────────────────
+outputs/*.md
+
+# ─── Arquivos de documentação e assets pesados ───────────────────
+docs/
+error/
+
+# ─── Python ───────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# ─── OS / Editor ──────────────────────────────────────────────────
+.DS_Store
+.cursor/
+*.swp
